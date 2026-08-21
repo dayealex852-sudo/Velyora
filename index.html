@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Velyora</title>
-  <link rel="manifest" href="manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('Sw.js');
-    }
-  </script>
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    header { background: #333; color: white; padding: 15px; text-align: center; border-radius: 10px; }
+    .card { background: white; padding: 20px; border-radius: 10px; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    button { background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <h1>Velyora</h1>
-  <p>Bienvenue sur votre application Velyora !</p>
+  <header><h1>Velyora Boutique</h1></header>
+  <div class="card">
+    <h2>Nos Produits</h2>
+    <p>Bienvenue dans votre vraie boutique.</p>
+    <button onclick="alert('Commande passée !')">Acheter maintenant</button>
+  </div>
 </body>
 </html>
